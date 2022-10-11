@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>CelestialUI Admin</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="../../vendors/typicons.font/font/typicons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.svg" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt="logo"/></a>
+          <button class="navbar-toggler navbar-toggler align-self-center d-none d-lg-flex" type="button" data-toggle="minimize">
+            <span class="typcn typcn-th-menu"></span>
+          </button>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+          <ul class="navbar-nav mr-lg-2">
+            <li class="nav-item  d-none d-lg-flex">
+              <a class="nav-link" href="#">
+                Calendar
+              </a>
+            </li>
+            <li class="nav-item  d-none d-lg-flex">
+              <a class="nav-link active" href="#">
+                Statistic
+              </a>
+            </li>
+            <li class="nav-item  d-none d-lg-flex">
+              <a class="nav-link" href="#">
+                Employee
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item d-none d-lg-flex  mr-2">
+              <a class="nav-link" href="#">
+                Help
+              </a>
+            </li>
+            <li class="nav-item dropdown d-flex">
+              <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+                <i class="typcn typcn-message-typing"></i>
+                <span class="count bg-success">2</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../images/faces/face4.jpg" alt="image" class="profile-pic">
+                  </div>
+                  <div class="preview-item-content flex-grow">
+                    <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                    </h6>
+                    <p class="font-weight-light small-text mb-0">
+                      The meeting is cancelled
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../images/faces/face2.jpg" alt="image" class="profile-pic">
+                  </div>
+                  <div class="preview-item-content flex-grow">
+                    <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                    </h6>
+                    <p class="font-weight-light small-text mb-0">
+                      New product launch
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../images/faces/face3.jpg" alt="image" class="profile-pic">
+                  </div>
+                  <div class="preview-item-content flex-grow">
+                    <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                    </h6>
+                    <p class="font-weight-light small-text mb-0">
+                      Upcoming board meeting
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown  d-flex">
+              <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
+                <i class="typcn typcn-bell mr-0"></i>
+                <span class="count bg-danger">2</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <i class="typcn typcn-info-large mx-0"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                    <p class="font-weight-light small-text mb-0">
+                      Just now
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-warning">
+                      <i class="typcn typcn-cog mx-0"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal">Settings</h6>
+                    <p class="font-weight-light small-text mb-0">
+                      Private message
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-info">
+                      <i class="typcn typcn-user-outline mx-0"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                    <p class="font-weight-light small-text mb-0">
+                      2 days ago
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item nav-profile dropdown">
+              <a class="nav-link dropdown-toggle  pl-0 pr-0" href="#" data-toggle="dropdown" id="profileDropdown">
+                <i class="typcn typcn-user-outline mr-0"></i>
+                <span class="nav-profile-name">Evan Morales</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                <a class="dropdown-item">
+                <i class="typcn typcn-cog text-primary"></i>
+                Settings
+                </a>
+                <a class="dropdown-item">
+                <i class="typcn typcn-power text-primary"></i>
+                Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="typcn typcn-th-menu"></span>
+          </button>
+        </div>
+      </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+          <div id="settings-trigger"><i class="typcn typcn-cog-outline"></i></div>
+          <div id="theme-settings" class="settings-panel">
+            <i class="settings-close typcn typcn-delete-outline"></i>
+            <p class="settings-heading">SIDEBAR SKINS</p>
+            <div class="sidebar-bg-options" id="sidebar-light-theme">
+              <div class="img-ss rounded-circle bg-light border mr-3"></div>
+              Light
+            </div>
+            <div class="sidebar-bg-options selected" id="sidebar-dark-theme">
+              <div class="img-ss rounded-circle bg-dark border mr-3"></div>
+              Dark
+            </div>
+            <p class="settings-heading mt-2">HEADER SKINS</p>
+            <div class="color-tiles mx-0 px-4">
+              <div class="tiles success"></div>
+              <div class="tiles warning"></div>
+              <div class="tiles danger"></div>
+              <div class="tiles primary"></div>
+              <div class="tiles info"></div>
+              <div class="tiles dark"></div>
+              <div class="tiles default border"></div>
+            </div>
+          </div>
+        </div>
+      <!-- partial -->
+      <!-- partial:../../partials/_sidebar.html -->
+      
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper" style="width: 100%;">
+          <div class="row">
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Annual Profit</h4>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Customer Name</th>
+                          <th>Paid</th>
+                          <th>Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody id="anual_profit_tb">
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="card-description" style="font-size: 18px;">
+                    Annual Profit SUM: <span id="annual_pro_sum" style="color: red;"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Monthly Profit</h4>
+                    
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Customer Name</th>
+                            <th>Paid</th>
+                            <th>Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody id="monthly_profit_tb">
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                    <p class="card-description" style="font-size: 18px;">
+                      Monthly Profit SUM: <span id="monthly_pro_sum" style="color: red;"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Daily Profit</h4>
+                    
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Customer Name</th>
+                            <th>Paid</th>
+                            <th>Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody id="daily_profit_tb">
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                    <p class="card-description" style="font-size: 18px;">
+                      Monthly Profit SUM: <span id="daily_pro_sum" style="color: red;"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Annual Paid</h4>
+                    
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Customer Name</th>
+                            <th>Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody id="annual_paid_tb">
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Monthly Paid</h4>
+                    
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Customer Name</th>
+                            <th>Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody id="monthly_paid_tb">
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Today Paid</h4>
+                    
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Customer Name</th>
+                            <th>Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody id="today_paid_tb">
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Annual Not Paid</h4>
+                    
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Customer Name</th>
+                            <th>Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody id="annualnot_paid_tb">
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Monthly Not Paid</h4>
+                    
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Customer Name</th>
+                            <th>Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody id="monthltnot_paid_tb">
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Today Not Paid</h4>
+                    
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Customer Name</th>
+                            <th>Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody id="todaynot_paid_tb">
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-center text-sm-left d-block d-sm-inline-block">Copyright © <a href="https://www.bootstrapdash.com/" target="_blank">bootstrapdash.com</a> 2020</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard </a>templates from Bootstrapdash.com</span>
+            </div>
+          </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- base:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
+
+<meta name="csrf-token" content="{{ csrf_token() }}">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    fetchdata();
+    function fetchdata(){
+      //Anual profit
+      $.ajax({
+          url: "http://localhost:8080/api/annualProfit/all",
+          method: "get",
+          success: function (data) {
+            console.log(data);
+            $.each(data, function (key, item) {
+              
+              
+              $('#anual_profit_tb').append('<tr>\
+                            <td>'+item[1]+'</td>\
+                            <td>'+item[2]+'</td>\
+                            <td>'+item[3]+'</td>\
+                            <tr>'
+                        );
+              
+            });
+
+          },
+      });
+
+      $.ajax({
+          url: "http://localhost:8080/annualProfitSum/all",
+          method: "get",
+          success: function (data) {
+            console.log("test point");
+            console.log(data[0]);
+            $('#annual_pro_sum').html("");
+            $('#annual_pro_sum').append(data[0]);
+
+          },
+      });
+      
+
+      //Monthly profit
+      $.ajax({
+          url: "http://localhost:8080/montlyProfit/all",
+          method: "get",
+          success: function (data) {
+            console.log(data);
+            $.each(data, function (key, item) {
+              
+              
+              $('#monthly_profit_tb').append('<tr>\
+                            <td>'+item[0]+'</td>\
+                            <td>'+item[1]+'</td>\
+                            <td>'+item[2]+'</td>\
+                            <tr>'
+                        );
+              
+            });
+          },
+        });
+
+        $.ajax({
+          url: "http://localhost:8080/monthlyProfitSum/all",
+          method: "get",
+          success: function (data) {
+            console.log("test point");
+            console.log(data[0]);
+            $('#monthly_pro_sum').html("");
+            $('#monthly_pro_sum').append(data[0]);
+
+          },
+      });
+
+        //Daily profit
+      $.ajax({
+          url: "http://localhost:8080/todayProfit/all",
+          method: "get",
+          success: function (data) {
+            console.log(data);
+            $.each(data, function (key, item) {
+              
+              
+              $('#daily_profit_tb').append('<tr>\
+                            <td>'+item[0]+'</td>\
+                            <td>'+item[1]+'</td>\
+                            <td>'+item[2]+'</td>\
+                            <tr>'
+                        );
+              
+            });
+          },
+        });
+
+        $.ajax({
+          url: "http://localhost:8080/dailyProfitSum/all",
+          method: "get",
+          success: function (data) {
+            console.log("test point");
+            console.log(data[0]);
+            $('#daily_pro_sum').html("");
+            $('#daily_pro_sum').append(data[0]);
+
+          },
+      });
+
+        //annual_paid
+        $.ajax({
+          url: "http://localhost:8080/annualPaid/all",
+          method: "get",
+          success: function (data) {
+            console.log(data);
+            $.each(data, function (key, item) {
+              
+              
+              $('#annual_paid_tb').append('<tr>\
+                            <td>'+item[0]+'</td>\
+                            <td>'+item[1]+'</td>\
+                            <tr>'
+                        );
+              
+            });
+          },
+        });
+
+        //Monthly_paid
+        $.ajax({
+          url: "http://localhost:8080/monthlyPaid/all",
+          method: "get",
+          success: function (data) {
+            console.log(data);
+            $.each(data, function (key, item) {
+              
+              
+              $('#monthly_paid_tb').append('<tr>\
+                            <td>'+item[0]+'</td>\
+                            <td>'+item[1]+'</td>\
+                            <tr>'
+                        );
+              
+            });
+          },
+        });
+
+        //today_paid
+        $.ajax({
+          url: "http://localhost:8080/todayPaid/all",
+          method: "get",
+          success: function (data) {
+            console.log(data);
+            $.each(data, function (key, item) {
+              
+              
+              $('#today_paid_tb').append('<tr>\
+                            <td>'+item[0]+'</td>\
+                            <td>'+item[1]+'</td>\
+                            <tr>'
+                        );
+              
+            });
+          },
+        });
+
+
+        //anual not paid
+        $.ajax({
+          url: "http://localhost:8080/annualNotPaid/all",
+          method: "get",
+          success: function (data) {
+            console.log(data);
+            $.each(data, function (key, item) {
+              
+              
+              $('#annualnot_paid_tb').append('<tr>\
+                            <td>'+item[0]+'</td>\
+                            <td>'+item[1]+'</td>\
+                            <tr>'
+                        );
+              
+            });
+          },
+        });
+
+        //Monthly not paid
+        $.ajax({
+          url: "http://localhost:8080/monthlyNotPaid/all",
+          method: "get",
+          success: function (data) {
+            console.log(data);
+            $.each(data, function (key, item) {
+              
+              
+              $('#monthltnot_paid_tb').append('<tr>\
+                            <td>'+item[0]+'</td>\
+                            <td>'+item[1]+'</td>\
+                            <tr>'
+                        );
+              
+            });
+          },
+        });
+
+        //Today not paid
+        $.ajax({
+          url: "http://localhost:8080/todayNotPaid/all",
+          method: "get",
+          success: function (data) {
+            console.log(data);
+            $.each(data, function (key, item) {
+              
+              
+              $('#todaynot_paid_tb').append('<tr>\
+                            <td>'+item[0]+'</td>\
+                            <td>'+item[1]+'</td>\
+                            <tr>'
+                        );
+              
+            });
+          },
+        });
+
+
+
+    }
+
+    
+  });
+
+
+        
+           
+</script>
